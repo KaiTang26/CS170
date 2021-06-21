@@ -17,3 +17,23 @@ class Solution1{
 
     }
 }
+
+class Solution2{
+
+    public void polynomial(int x, int[] A){
+
+        int n = A.length-1;
+
+        int result = A[n];
+
+        for(int i=1; i<A.length; i++){
+            n--;
+            result = result*x+A[n];
+        }
+
+
+        System.out.println(result);
+
+
+    }
+}
